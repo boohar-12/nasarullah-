@@ -1,1 +1,24 @@
 
+:root {
+    --navy: #0a192f;
+    --cyan: #64ffda;
+    --glass: rgba(255, 255, 255, 0.05);
+}
+
+body { margin: 0; background-color: var(--navy); color: white; font-family: 'Segoe UI', sans-serif; overflow-x: hidden; }
+#moleculeCanvas { position: fixed; top: 0; left: 0; z-index: -1; }
+
+.navbar { padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background: rgba(10, 25, 47, 0.85); backdrop-filter: blur(10px); z-index: 100; }
+.logo { font-weight: bold; font-size: 1.5rem; }
+.logo span { color: var(--cyan); }
+
+.hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+.glass-card { background: var(--glass); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 40px; }
+
+.btn { padding: 15px 30px; border-radius: 10px; text-decoration: none; font-weight: bold; display: inline-block; }
+.primary { background: var(--cyan); color: var(--navy); }
+
+.section { padding: 80px 50px; text-align: center; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px; }
+
+.wa-btn { background: var(--cyan); color: var(--navy); padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; }
